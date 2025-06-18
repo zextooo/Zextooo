@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Zextoo Games</title>
+
+  <!-- Prevent Inspect -->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+    document.onkeydown = function(e) {
+      if (e.keyCode == 123 || (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0))) {
+        return false;
+      }
+    }
+  </script>
+
+  <!-- Meta Info -->
+  <meta name="description" content="Play free online games at Zextoo. Enjoy car racing, sniper challenges, stack tower games and more. No download needed!">
+  <link rel="icon" href="images/zextoo_logo_short.jpg" type="image/jpg">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5869292715438632" crossorigin="anonymous"></script>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-image: url('https://images.openai.com/thumbnails/7be14f5dc007f0458e558fcfe73596d8.jpeg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: white;
+    }
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 30px;
+      background-color: #111;
+      color: white;
+    }
+    .logo-title {
+      display: flex;
+      align-items: center;
+    }
+    .logo {
+      height: 50px;
+      width: 50px;
+      margin-right: 10px;
+    }
+    .site-title {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+    }
+    nav a {
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #00ffcc;
+    }
+    .container {
+      padding: 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .game-card {
+      background: #1e1e1e;
+      padding: 15px;
+      border-radius: 12px;
+      transition: 0.3s;
+    }
+    .game-card:hover {
+      transform: scale(1.05);
+    }
+    .game-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .game-card h3 {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+    .game-card a {
+      display: inline-block;
+      margin-top: 8px;
+      color: #00e676;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #777;
+      border-top: 2px solid #333;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.8);
+      justify-content: center;
+      align-items: center;
+      z-index: 999;
+    }
+    .modal-content {
+      position: relative;
+      width: 90%;
+      max-width: 1000px;
+      background: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .modal-content iframe {
+      width: 100%;
+      height: 600px;
+      border: none;
+    }
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 15px;
+      font-size: 30px;
+      font-weight: bold;
+      color: red;
+      cursor: pointer;
+      z-index: 1000;
+    }
+    .close-btn:hover {
+      color: darkred;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="navbar">
+    <div class="logo-title">
+      <a href="index.html" class="home-link">
+        <img src="images/zextoo_logo_short.jpg" alt="ZEXTOO Logo" class="logo">
+        <span class="site-title">ZEXTOO Games</span>
+      </a>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="categories.html">Categories</a>
+      <a href="top-games.html">Top Games</a>
+      <a href="submit.html">Submit Game</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+ <div class="container">
+  <div class="game-card">
+    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/max_632/98ee46100842133.5f117da0781a8.jpg" alt="Car Racing">
+    <h3>Car Racing</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/6mpmshr3a56tp1x01u87xfj3i330ucdy/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://uncached.gamemonetize.co/rdij6lpwivwkq1cfebpbyt6kc00fh6hi/@base/banner.jpg" alt="Space Survival">
+    <h3>Space Survival</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/rdij6lpwivwkq1cfebpbyt6kc00fh6hi/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://play-lh.googleusercontent.com/F29K9Yt4wOSQPgF32udTa4vul-WJjd-4InH1cYoLBU-GadLe1irGNBJPLbstqCDSJQo=w526-h296-rw" alt="Squid Game">
+    <h3>Squid Game Challenge</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/w64b9ot0zjhjxx7xxzxd3gjxvczgx4b9/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlRB7r-KZL9AvcHcWFUZee3e1jdHi_KPqjnQ&s" alt="Domino Online">
+    <h3>Domino Online</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/cesnlh8sq40hoqm7t79vz7xnb1mzvnbx/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://imgs.crazygames.com/tanks-3d_16x9/20250605035917/tanks-3d_16x9-cover?metadata=none&quality=40&width=412" alt="Tank Master">
+    <h3>Tank Master</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/r50sosv94qp15bkjhze2givwy8z5bsuu/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamemonetize.com/py3zv9ry8am8vezvg2od9cfk9uzoe94n/512x384.jpg" alt="Galaxy Brick Breaker">
+    <h3>Galaxy Brick Breaker</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/py3zv9ry8am8vezvg2od9cfk9uzoe94n/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamemonetize.com/3qo6bwp6aea8pj4ntuulxtyqsszn30ns/512x384.jpg" alt="Moto Attack">
+    <h3>Moto Attack</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/3qo6bwp6aea8pj4ntuulxtyqsszn30ns/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://thiefpuzzle.io/cache/data/image/game/thief-puzzle-f200x200.webp" alt="Thief Puzzle">
+    <h3>Thief Puzzle</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/2mb4bxmkp1l8xg3j6ebc58w1n960rc99/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/476d3f47d44f4a4d8553c294e635cc1a-512x384.jpg" alt="Hero Transform Race">
+    <h3>Hero Transform Race</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/476d3f47d44f4a4d8553c294e635cc1a/?gd_sdk_referrer_url=https://gamedistribution.com/games/hero-transform-race/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/116e0e450a374f24877fa02ad98a2e62-512x384.jpg" alt="Football Rush 3D">
+    <h3>Football Rush 3D</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/116e0e450a374f24877fa02ad98a2e62/?gd_sdk_referrer_url=https://www.gamedistribution.com/games/football-rush-3d/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/904bc37384d64d90bd310319fee5d0db-512x384.jpg" alt="Happy Block">
+    <h3>Happy Block</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/904bc37384d64d90bd310319fee5d0db/?gd_sdk_referrer_url=https://gamedistribution.com/games/happy-blocks-1/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/ad3bc5a5550640a5ac89d197fb153d61-512x384.jpg" alt="Baseball Basher">
+    <h3>Baseball Basher</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/ad3bc5a5550640a5ac89d197fb153d61/?utm_source=zextoo.github.io&utm_medium=homerun-derby&utm_campaign=block-and-redirect')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/f4f89b046c8f4fee98b01414f1e60c18-512x512.jpg" alt="Block Blast">
+    <h3>Block Blast</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/3a364ed8d075418abb7849e1d63b6015/?utm_source=zextoo.github.io&utm_medium=block-blast-1&utm_campaign=block-and-redirect')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/1ca5c64c80f44f70bfe7a4f3519f90ee-512x384.jpeg" alt="Fruit Master">
+    <h3>Fruit Master</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/1ca5c64c80f44f70bfe7a4f3519f90ee/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/1377b99c10284c229423118a941af3b1-512x512.jpeg" alt="OvO">
+    <h3>OvO</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/1377b99c10284c229423118a941af3b1/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/ec147555caf047899e02c433fc467f55-512x512.jpg" alt="Rodha">
+    <h3>Rodha</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/ec147555caf047899e02c433fc467f55/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/snail-bob-1-512x384.jpg" alt="Snail Bob 1">
+    <h3>Snail Bob 1</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/b115976d62a64cff8ca1cee6c971d61c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/only-up-512x384.jpg" alt="Only Up">
+    <h3>Only Up</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/ec5a0aa39f5c4cd19d1e6153de22650d/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/bob-the-robber-512x384.jpg" alt="Bob The Robber">
+    <h3>Bob The Robber</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/18d28481ea514f3c838f9a5a355fb0f7/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/poker-with-friends-512x384.jpg" alt="Poker With Friends">
+    <h3>Poker With Friends</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/80cf8e94d5af458e822afc6c9f5766e0/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/vex-7-512x384.jpg" alt="Vex 7">
+    <h3>Vex 7</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/0c454c9562d249d28ba3a2b50564042c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/pou-512x384.jpg" alt="Pou">
+    <h3>Pou</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/d1362abc246f43bdb5c26643aec2b61b/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/infinite-craft-512x384.jpg" alt="Infinite Craft">
+    <h3>Infinite Craft</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/4d455d6cdff443b5855ee472dff23f8c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnMbm-sGYK4m3_V90DM3rCRwKAoiPL6_XX2A&s" alt="Super Mario">
+    <h3>Super Mario</h3>
+    <a onclick="openGame('https://html5.gamemonetize.co/sly30piwilci61j7pc5x8n36cdu9n19f/')">Play Now</a>
+  </div>
+    <div class="game-card">
+    <img src="https://img.gamedistribution.com/4bb01d440e0c4430b94e2217da62e01b-512x384.jpg" alt="Ninja Hands">
+    <h3>Ninja Hands</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/4bb01d440e0c4430b94e2217da62e01b/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/5c460933ae974271b87e1c36eeae553e-512x384.jpg" alt="Stickman Fighter Mega Brawl">
+    <h3>Stickman Fighter</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/5c460933ae974271b87e1c36eeae553e/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/f5925f91dbf34e049a561cc9c8829d73-512x384.jpg" alt="Red Ball Forever">
+    <h3>Red Ball Forever</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/f5925f91dbf34e049a561cc9c8829d73/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/5082dc2a96734773a362520d8a61d527-512x384.jpg" alt="Mine Sweeper">
+    <h3>Mine Sweeper</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/5082dc2a96734773a362520d8a61d527/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/2048-512x384.jpg" alt="2048">
+    <h3>2048</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/bf83e6b04ab04a8c9dfe9e0c92bd456c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/hole-io-512x384.jpg" alt="Hole.io">
+    <h3>Hole.io</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/7f26e60e5e1b4071970b0a7f15c53f91/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/3d-chess-512x384.jpg" alt="3D Chess">
+    <h3>3D Chess</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/97ff9e8e7fdc40b6941b46315b46b8ea/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/87f48c07b6fa4b7ea38fdbfb322f55d1-512x384.jpg" alt="Zombie Mission 2">
+    <h3>Zombie Mission 2</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/87f48c07b6fa4b7ea38fdbfb322f55d1/')">Play Now</a>
+  </div>
+   <div class="game-card">
+    <img src="https://img.gamedistribution.com/drift-racing-512x384.jpg" alt="Drift Racing">
+    <h3>Drift Racing</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/58a2e61c3a57482d86ef4dbb828de097/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/boxer-puzzle-512x384.jpg" alt="Boxer Puzzle">
+    <h3>Boxer Puzzle</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/8bdf4a72b96e4f32a8c2c496e2ef473c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/fireboy-watergirl-1-512x384.jpg" alt="Fireboy & Watergirl">
+    <h3>Fireboy & Watergirl</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/0aa3e95a6b67418493913d3149c85c5e/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/slope-512x384.jpg" alt="Slope">
+    <h3>Slope</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/b28d697f63e14cbb87f3c06e305dc1a4/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/stickman-hook-512x384.jpg" alt="Stickman Hook">
+    <h3>Stickman Hook</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/0e97503c7b5e4f69bb849d88b1d48aa5/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/idle-miner-tycoon-512x384.jpg" alt="Idle Miner Tycoon">
+    <h3>Idle Miner Tycoon</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/684e88e9835e4dc980be23e5b86c1b65/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/gun-battle-512x384.jpg" alt="Gun Battle">
+    <h3>Gun Battle</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/bfc772b46fa64c4798c3387f8bba69d4/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/soccer-skills-euro-cup-512x384.jpg" alt="Soccer Skills Euro Cup">
+    <h3>Soccer Skills Euro Cup</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/4499b4e9a3b14813bbdd1539f0f465a6/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/cooking-frenzy-512x384.jpg" alt="Cooking Frenzy">
+    <h3>Cooking Frenzy</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/abf9d7a3f702426e962e18b46cf89820/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/word-search-classic-512x384.jpg" alt="Word Search Classic">
+    <h3>Word Search Classic</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/aa888c12c3a442ba87fc0a48de22819e/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/zombie-royale-512x384.jpg" alt="Zombie Royale">
+    <h3>Zombie Royale</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/755d69d5668a42f0a268e126ecbc1988/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/rally-champion-512x384.jpg" alt="Rally Champion">
+    <h3>Rally Champion</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/d8dddb5485374bc5ae99a5e6b6b69c9f/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/parking-mania-512x384.jpg" alt="Parking Mania">
+    <h3>Parking Mania</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/f18a540ebf01436c87c6f27e746e8422/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/tower-defense-kingdom-512x384.jpg" alt="Tower Defense Kingdom">
+    <h3>Tower Defense Kingdom</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/f5ae0e1adadf43e38467856ab20e9a14/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/farm-frenzy-2-512x384.jpg" alt="Farm Frenzy 2">
+    <h3>Farm Frenzy 2</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/4e87f87c0d1a4a49918ea23b1b13471e/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/raft-wars-2-512x384.jpg" alt="Raft Wars 2">
+    <h3>Raft Wars 2</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/6dff9e0eb64c4f86a14ef7ebba3fbd8f/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/penalty-shooters-2-512x384.jpg" alt="Penalty Shooters 2">
+    <h3>Penalty Shooters 2</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/cf8ad90c32c44f75816578b7054d0e94/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/hill-climb-racing-512x384.jpg" alt="Hill Climb Racing">
+    <h3>Hill Climb Racing</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/9c7e9390674f41e08db7d3197b3c43d2/')">Play Now</a>
+  </div>
+   <div class="game-card">
+    <img src="https://img.gamedistribution.com/mr-bullet-512x384.jpg" alt="Mr Bullet">
+    <h3>Mr Bullet</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/a404d392f79c4435b1e911df57fc51fc/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/slither-io-512x384.jpg" alt="Slither.io">
+    <h3>Slither.io</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/2a8cb89dd15240e2a021c4718205e372/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/bob-the-robber-4-512x384.jpg" alt="Bob The Robber 4">
+    <h3>Bob The Robber 4</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/b8f0d22c3e7d43b3a9b65fdf76ff3f52/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/g-switch-3-512x384.jpg" alt="G-Switch 3">
+    <h3>G-Switch 3</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/04a1f46e6e0b4a9bb72f8e5b3a54a79c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/temple-run-2-512x384.jpg" alt="Temple Run 2">
+    <h3>Temple Run 2</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/9e28a34fcb1642b382ef47b4fc2d6b17/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/stickman-archer-512x384.jpg" alt="Stickman Archer">
+    <h3>Stickman Archer</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/b0fc7f7052c84c5c9ff2a6cc40709e51/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/basketball-stars-512x384.jpg" alt="Basketball Stars">
+    <h3>Basketball Stars</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/01fc9e1fdf914e9f857c4f2e1c06ae7c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/duck-hunt-512x384.jpg" alt="Duck Hunt">
+    <h3>Duck Hunt</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/307137b9c91f45dd9450f09e7d60f479/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/zombie-siege-outbreak-512x384.jpg" alt="Zombie Siege Outbreak">
+    <h3>Zombie Siege Outbreak</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/fcbd275f6e9e4438ae2fc8c5f676f34c/')">Play Now</a>
+  </div>
+  <div class="game-card">
+    <img src="https://img.gamedistribution.com/cannon-blast-512x384.jpg" alt="Cannon Blast">
+    <h3>Cannon Blast</h3>
+    <a onclick="openGame('https://html5.gamedistribution.com/78ef3e6e0f4a4c92b8742d0e68f1111b/')">Play Now</a>
+  </div>
+
+</div>
+
+
+  <footer>
+    &copy; 2025 Zextoo Games. All rights reserved to Arjun Pandey.
+  </footer>
+
+  <!-- Modal for Game -->
+  <div class="modal" id="gameModal">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeGame()">&times;</span>
+      <iframe id="gameFrame" src=""></iframe>
+    </div>
+  </div>
+
+  <!-- Game Modal Script -->
+  <script>
+    function openGame(url) {
+      document.getElementById('gameFrame').src = url;
+      document.getElementById('gameModal').style.display = 'flex';
+    }
+    function closeGame() {
+      document.getElementById('gameModal').style.display = 'none';
+      document.getElementById('gameFrame').src = '';
+    }
+  </script>
+
+  <!-- Cookie Consent -->
+  <div id="cookieConsent" style="position: fixed; bottom: 0; width: 100%; background: #222; color: #fff; padding: 15px; text-align: center; z-index: 9999; display: none;">
+    This website uses cookies and similar technologies to ensure you get the best experience.
+    By using our site, you agree to our <a href="/privacy.html" style="color: #4CAF50;">Privacy Policy</a>.
+    <button onclick="acceptCookies()" style="margin-left: 10px; padding: 6px 12px; background-color: #4CAF50; border: none; color: white; border-radius: 4px; cursor: pointer;">Got it!</button>
+  </div>
+  <script>
+    function acceptCookies() {
+      localStorage.setItem("cookieAccepted", "true");
+      document.getElementById("cookieConsent").style.display = "none";
+    }
+    window.onload = function () {
+      if (!localStorage.getItem("cookieAccepted")) {
+        document.getElementById("cookieConsent").style.display = "block";
+      }
+    };
+  </script>
+
+</body>
+</html>
