@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Zextoo Games</title>
+  <title>Categories - Zextoo Games</title>
 
   <!-- Prevent Inspect -->
   <script>
@@ -16,12 +16,9 @@
   </script>
 
   <!-- Meta Info -->
-  <meta name="description" content="Play free online games at Zextoo. Enjoy car racing, sniper challenges, stack tower games and more. No download needed!">
+  <meta name="description" content="Browse game categories like action, puzzle, racing and more on Zextoo.">
   <link rel="icon" href="images/zextoo_logo_short.jpg" type="image/jpg">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5869292715438632" crossorigin="anonymous"></script>
 
   <style>
     * {
@@ -61,8 +58,8 @@
       text-decoration: none;
     }
     .home-link {
-  text-decoration: none;
-}
+      text-decoration: none;
+    }
     nav a {
       margin-left: 25px;
       font-size: 18px;
@@ -74,79 +71,40 @@
     nav a:hover {
       color: #00ffcc;
     }
+
     .container {
       padding: 20px;
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     .game-card {
       background: #1e1e1e;
-      padding: 15px;
+      padding: 20px;
       border-radius: 12px;
+      text-align: center;
       transition: 0.3s;
     }
     .game-card:hover {
       transform: scale(1.05);
     }
-    .game-card img {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 8px;
-    }
     .game-card h3 {
-      margin-top: 10px;
-      font-size: 1.2em;
+      font-size: 20px;
+      margin-bottom: 10px;
     }
     .game-card a {
       display: inline-block;
       margin-top: 8px;
       color: #00e676;
       text-decoration: none;
-      cursor: pointer;
+      font-weight: bold;
     }
     footer {
       text-align: center;
       padding: 20px;
       color: #777;
       border-top: 2px solid #333;
-    }
-    .modal {
-      display: none;
-      position: fixed;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
-      background: rgba(0, 0, 0, 0.8);
-      justify-content: center;
-      align-items: center;
-      z-index: 999;
-    }
-    .modal-content {
-      position: relative;
-      width: 90%;
-      max-width: 1000px;
-      background: white;
-      padding: 10px;
-      border-radius: 10px;
-    }
-    .modal-content iframe {
-      width: 100%;
-      height: 600px;
-      border: none;
-    }
-    .close-btn {
-      position: absolute;
-      top: 10px;
-      right: 15px;
-      font-size: 30px;
-      font-weight: bold;
-      color: red;
-      cursor: pointer;
-      z-index: 1000;
-    }
-    .close-btn:hover {
-      color: darkred;
     }
   </style>
 </head>
@@ -169,5 +127,29 @@
       <a href="contact.html">Contact</a>
     </nav>
   </header>
+
+  <div class="container">
+    <div class="game-card">
+      <h3>🔥 Action Games</h3>
+      <a href="action.html">Browse Games</a>
+    </div>
+    <div class="game-card">
+      <h3>🧠 Puzzle Games</h3>
+      <a href="puzzle.html">Browse Games</a>
+    </div>
+    <div class="game-card">
+      <h3>🏎️ Racing Games</h3>
+      <a href="racing.html">Browse Games</a>
+    </div>
+    <div class="game-card">
+      <h3>🌍 Adventure Games</h3>
+      <a href="adventure.html">Browse Games</a>
+    </div>
+    <div class="game-card">
+      <h3>🎈 Kids Games</h3>
+      <a href="kids.html">Browse Games</a>
+    </div>
+  </div>
+
 </body>
 </html>
