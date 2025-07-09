@@ -19,7 +19,7 @@
 ## <picture> <img src="https://github.com/7oSkaaa/7oSkaaa/blob/main/Images/competitive_programming_profile.png?raw=true" width=40> </picture> My Competitive Programming Profiles
 
 <p align="center">
-  <a href="[https://codeforces.com/profile/7oSkaaa](https://zextooo.github.io/ARJUN/)"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-codeforces-programming-competitions-and-contests-programming-community-logo-shadow-tal-revivo.png" alt="Code Forces"/></a>
+  <a href="https://zextooo.github.io/ARJUN/"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-codeforces-programming-competitions-and-contests-programming-community-logo-shadow-tal-revivo.png" alt="Code Forces"/></a>
 	<a href="[https://leetcode.com/7oSkaa/](https://zextooo.github.io/ARJUN/)"><img src="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/50/000000/external-level-up-your-coding-skills-and-quickly-land-a-job-logo-shadow-tal-revivo.png" alt="LeetCode"/></a>
 	<a href="[https://atcoder.jp/users/ahmed_7oSkaa](https://zextooo.github.io/ARJUN/)"><img src="https://i.ibb.co/Q9WSjDB/logo.png" alt="AtCoder" width = 60px/></a>
 	<a href="[https://www.codechef.com/users/ahmed_7oskaa](https://zextooo.github.io/ARJUN/)"><img src="https://img.icons8.com/color/50/000000/codechef.png" alt="Code Chef"/></a>
