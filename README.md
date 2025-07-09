@@ -195,29 +195,13 @@
 
 ----
 	
-<div style="display: flex; align-items: center;">
-  <div style="position: relative; width: 50px; height: 50px;">
-    <img 
-      src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" 
-      alt="FPS Game Logo"
-      style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
-    />
- <a href="https://fps-client.vercel.app/" target="_blank"
-       style="
-         position: absolute;
-         left: 100%;
-         top: 50%;
-         transform: translateY(-50%);
-         margin-left: 10px;
-         text-decoration: none;
-         color: black;
-         font-weight: bold;
-         font-family: Arial;
-       ">
-      Play FPS Game
-    </a>
-  </div>
+<div style="position: absolute; top: 50px; left: 100px;">
+  <a href="https://fps-client.vercel.app/" target="_blank"
+     style="text-decoration: none; color: black; font-weight: bold; font-family: Arial;">
+    Play FPS Game
+  </a>
 </div>
+
 
 
 </details>
