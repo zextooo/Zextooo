@@ -194,13 +194,13 @@
 <details><summary><h3>⚡ Recent GitHub Activity</h3></summary>
 
 ----
-	
-<div style="position: absolute; top: 50px; left: 100px;">
+<div style="position: absolute; top: 50px; left: 100px; border: none; box-shadow: none;">
   <a href="https://fps-client.vercel.app/" target="_blank"
-     style="text-decoration: none; color: black; font-weight: bold; font-family: Arial;">
+     style="text-decoration: none; color: black; font-weight: bold; font-family: Arial; border: none; box-shadow: none;">
     Play FPS Game
   </a>
 </div>
+
 
 
 
