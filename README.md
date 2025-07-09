@@ -208,7 +208,7 @@
 	
 <div>
   <p align="center">
-  <a href="https://github.com/zextooo/Zextooo" target="_blank">
+   <a href="https://github.com/zextooo/Zextooo" target="_blank">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=zextooo&repo=Zextooo&theme=tokyonight" alt="GitHub Repo Card" />
   </a>
 
