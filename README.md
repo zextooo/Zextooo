@@ -229,6 +229,9 @@
 	
 ## 🐍 A Snake Eating My Contributions Graph
 
+## 🐍 A Snake Eating My Contributions Graph
+
 <p align="center">
-  <img src="https://github.com/zextooo/zextooo/blob/output/github-contribution-grid-snake.svg" alt="snake gif" />
+  <img src="https://raw.githubusercontent.com/zextooo/zextooo/output/github-contribution-grid-snake.svg" alt="snake gif" />
 </p>
+
