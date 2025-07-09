@@ -197,10 +197,11 @@
 	
 <p align="left">
   <a href="https://fps-client.vercel.app/">
-    <img src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" alt="FPS Client" width="50" style="border-radius: 50%; vertical-align: middle;"/>
-    <span style="font-size: 16px; margin-left: 10px; vertical-align: middle;">fps-client.vercel.app</span>
+    <img src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" alt="FPS Client" width="50"/>
+    fps-client.vercel.app
   </a>
 </p>
+
 
 
 
