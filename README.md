@@ -195,7 +195,12 @@
 
 ----
 	
-[![fps-client game](https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg)](https://fps-client.vercel.app/)
+<p align="left">
+  <a href="https://fps-client.vercel.app/">
+    <img src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" alt="FPS Client Logo" width="80"/>
+  </a>
+  <a href="https://fps-client.vercel.app/">fps-client.vercel.app</a>
+</p>
 
 
 
