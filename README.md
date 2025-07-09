@@ -213,10 +213,11 @@
 	
 <div>
   <p align="center">
-	<a href="https://github.com/7oSkaaa/LeetCode_DailyChallenge_2023">
-      		<img src="https://github-readme-stats.vercel.app/api/pin/?username=7oSkaaa&repo=LeetCode_DailyChallenge_2023&theme=tokyonight" alt="GitHub Stats" />
-    	</a>
-    	<a href="https://github.com/7oSkaaa/Strees_Testing">
+  <a href="https://github.com/zextooo/Zextooo" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=zextooo&repo=Zextooo&theme=tokyonight" alt="GitHub Repo Card" />
+  </a>
+
+<a href="https://github.com/7oSkaaa/Strees_Testing">
       		<img src="https://github-readme-stats.vercel.app/api/pin/?username=7oSkaaa&repo=Strees_Testing&theme=tokyonight" alt="GitHub Stats" />
     	</a>
     	<a href="https://github.com/7oSkaaa/CP-Templates">
