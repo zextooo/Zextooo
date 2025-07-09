@@ -195,12 +195,16 @@
 
 ----
 	
-<p align="left">
-  <a href="https://fps-client.vercel.app/">
-    <img src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" alt="FPS Client" width="50"/>
-    fps-client.vercel.app
+<div style="text-align: left;">
+  <a href="https://fps-client.vercel.app/" target="_blank">
+    <img 
+      src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" 
+      alt="FPS Client Game" 
+      style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover;"
+    />
   </a>
-</p>
+</div>
+
 
 
 
