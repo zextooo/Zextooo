@@ -169,7 +169,7 @@
 
 ----	
 
-<p align="center"><img src="![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=zextooo&theme=tokyonight_duo)
+<p align="center"><img src=https://github-readme-streak-stats.herokuapp.com/?user=zextooo&theme=tokyonight_duo)
 " alt="7oSkaaa" /></p>
 
 </details>
