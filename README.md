@@ -195,7 +195,7 @@
 
 ----
 	
-[![](https://github-readme-activity-graph.cyclic.app/graph?username=7oSkaaa&theme=github	)]((https://fps-client.vercel.app/))
+[![fps-client game](https://github-readme-activity-graph.cyclic.app/graph?username=7oSkaaa&theme=github	)](https://fps-client.vercel.app/)
 
  
 </details>
