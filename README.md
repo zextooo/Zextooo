@@ -220,6 +220,18 @@
   <a href="https://github.com/zextooo/ARJUN" target="_blank">
     <img src="https://github-readme-stats.vercel.app/api/pin/?username=zextooo&repo=ARJUN&theme=tokyonight" alt="GitHub Repo Card" />
   </a>
+ <a href="https://github.com/zextooo/2048-world" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=zextooo&repo=2048-world&theme=tokyonight" alt="GitHub Repo Card" />
+  </a>
+  <a href="https://github.com/zextooo/fps-client" target="_blank">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=zextooo&repo=fps-client&theme=tokyonight" alt="GitHub Repo Card" />
+  </a>
+
+
+
+
+
+  
 
 <a href="https://github.com/7oSkaaa/CP-Templates">
       		<img src="https://github-readme-stats.vercel.app/api/pin/?username=7oSkaaa&repo=CP-Templates&theme=tokyonight" alt="GitHub Stats" />
