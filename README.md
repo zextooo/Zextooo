@@ -202,8 +202,6 @@
       alt="FPS Game Logo"
       style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
     />
-    
-    <!-- This is the text placed at the middle-right of the circle -->
  <a href="https://fps-client.vercel.app/" target="_blank"
        style="
          position: absolute;
