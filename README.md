@@ -195,7 +195,12 @@
 
 ----
 	
-[![fps-client game](https://github-readme-activity-graph.cyclic.app/graph?username=7oSkaaa&theme=github	)](https://fps-client.vercel.app/)
+<p align="center">
+  <a href="https://fps-client.vercel.app/" target="_blank">
+    <img src="https://github.com/zextooo/zextooo/blob/main/assets/fps-client-banner.png" alt="fps-client game" style="width: 100%; max-width: 800px;"/>
+  </a>
+</p>
+
 
  
 </details>
