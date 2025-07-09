@@ -195,18 +195,30 @@
 
 ----
 	
-<div style="display: flex; justify-content: flex-end; align-items: center; padding: 10px;">
-  <a href="https://fps-client.vercel.app/" target="_blank"
-     style="display: flex; align-items: center; text-decoration: none; color: black; font-weight: 600; font-family: Arial;">
-    
- <img 
+<div style="display: flex; align-items: center;">
+  <div style="position: relative; width: 50px; height: 50px;">
+    <img 
       src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" 
       alt="FPS Game Logo"
-      style="width: 30px; height: 30px; border-radius: 50%; object-fit: cover; margin-right: 8px;"
+      style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;"
     />
-    <span>Play FPS Game</span>
     
-  </a>
+    <!-- This is the text placed at the middle-right of the circle -->
+ <a href="https://fps-client.vercel.app/" target="_blank"
+       style="
+         position: absolute;
+         left: 100%;
+         top: 50%;
+         transform: translateY(-50%);
+         margin-left: 10px;
+         text-decoration: none;
+         color: black;
+         font-weight: bold;
+         font-family: Arial;
+       ">
+      Play FPS Game
+    </a>
+  </div>
 </div>
 
 
