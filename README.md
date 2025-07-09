@@ -195,7 +195,7 @@
 
 ----
 	
-<p align="center">
+<p align="left">
   <a href="https://fps-client.vercel.app/" target="_blank">
     <img src="https://github.com/zextooo/zextooo/blob/main/assets/fps-client-banner.png" alt="fps-client game" style="width: 100%; max-width: 800px;"/>
   </a>
