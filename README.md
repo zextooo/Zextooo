@@ -196,17 +196,16 @@
 ----
 	
 <div style="display: flex; align-items: center;">
-  <a href="https://fps-client.vercel.app/" target="_blank" style="display: flex; align-items: center; text-decoration: none; color: black; font-weight: bold;">
-    <img 
-      src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" 
+  <a href="https://fps-client.vercel.app/" target="_blank" 
+     style="display: flex; align-items: center; text-decoration: none; color: black; font-weight: bold;"> 
+ <img src="https://static.vecteezy.com/system/resources/previews/015/155/657/non_2x/gun-target-icon-for-fps-games-category-free-vector.jpg" 
       alt="FPS Client Game" 
-      style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 10px; transform: translateY(1px);"
+      style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover; margin-right: 12px;"
     />
-    Play FPS Game
+    
+   <span style="line-height: 1; display: inline-block;">Play FPS Game</span>
   </a>
 </div>
-
-
 
 </details>
 
